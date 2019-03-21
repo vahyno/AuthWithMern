@@ -1,5 +1,6 @@
 module.exports = {
-    mongoURI: 'mongodb+srv://dbAdminAdminovitch:XvVC3ssmwJ75HyIl@demoauth-cucak.mongodb.net/test?retryWrites=true'
+    mongoURI: 'mongodb+srv://dbAdminAdminovitch:XvVC3ssmwJ75HyIl@demoauth-cucak.mongodb.net/test?retryWrites=true',
+    secretOrKey: "secret_je_tajemstvi",
 }
 
 // dbAdminAdminovitch XvVC3ssmwJ75HyIl
@@ -9,3 +10,5 @@ module.exports = {
 // mongodb+srv://dbAdminAdminovitch:<password>@demoauth-cucak.mongodb.net/test
 
 // mongodb://<dbuser>:<dbpassword>@ds159993.mlab.com:59993/mern-auth
+
+
