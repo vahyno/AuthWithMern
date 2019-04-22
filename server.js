@@ -7,6 +7,17 @@ const passport = require('passport');
 const users = require('./routes/api/users');
 
 const app = express();
+app.use(express.static('public'));
+
+
+//middleware
+
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    res.header("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE");
+    next();
+});
 
 // Bodyparser middleware
 
